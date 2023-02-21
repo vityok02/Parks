@@ -1,0 +1,84 @@
+h1 {
+    font-size: 48px;
+}
+
+.image {
+    padding-block: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(images/fon.png);
+    color: white;
+    height: auto;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.btn {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    background: white;
+}
+
+.btn a{
+    display: flex;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+}
+
+.about-us .content{
+    justify-content: center;
+    vertical-align: middle;
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.about-us img {
+    border-radius: 5px;
+    width: 35%;
+    float: right;
+    margin-block: 5%;
+    margin-right: 5%;
+}
+
+
+.troubles {
+    display: flex;
+    width: 100%;
+    clear: both;
+    background: url(images/img2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.troubles .container {
+    line-height: 1.5;
+    width: 1200px;
+    height: 400px;
+    padding: 10px 50px 50px 50px;
+    font-size: 28px;
+    background: #B1A18E;
+    margin: auto;
+    margin-block: 50px;
+}
+
+.work {
+
+}
+
+.work img {
+    float: left;
+}
+
+work
