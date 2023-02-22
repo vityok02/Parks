@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: 1;
+  }
+
 body {
     background: #B1A18E;
     margin: 0;
