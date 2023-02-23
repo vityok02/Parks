@@ -6,15 +6,15 @@ footer {
     clear: both;
   }
   
-  .contact-info {
+  #contact-info {
     margin-bottom: 20px;
   }
   
-  .contact-info p {
+  #contact-info p {
     margin: 0;
   }
   
-  .contact-info a {
+  #contact-info a {
     color: #fff;
   }
   

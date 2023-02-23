@@ -2,8 +2,12 @@ h1 {
     font-size: 48px;
 }
 
+main {
+    font-size: 24px;
+}
+
 .image {
-    margin-top: 60px;
+    clear: both;
     height: 600px;
     padding-top: 200px;
     justify-content: center;
@@ -28,11 +32,11 @@ h1 {
     width: 280px;
     height: 70px;
     background: rgb(207, 207, 207);
-    animation: ch-color-2 0.5s forwards;
+    animation: ch-color-2 0.3s forwards;
 }
 
 .btn:hover {
-    animation: ch-color-1 0.5s forwards;
+    animation: ch-color-1 0.3s forwards;
 }
 
 @keyframes ch-color-1 {
@@ -67,40 +71,58 @@ h1 {
     text-decoration: none;
 }
 
-.about-us {
+.block img {
+    background-image: no-repeat center center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 70%;
+    margin-block: 5%;
+}
+
+.block{
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.about-us .right {
+#about-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about-us .right {
+    display: flex;
+    justify-content: center;
     float: right;
     width: 50%;
 }
 
-.about-us .left {
+#about-us .left {
+    margin-top: 20px;
     width: 50%;
     float: right;
 }
 
-.about-us .content{
+/* #about-us .content, #about-us img {
+    display: inline-block;
+} */
+
+.content {
+    width: 70%;
+}
+
+#about-us .content{
     margin: auto;
     margin-right: 70px;
     line-height: 1.85;
     justify-content: center;
     vertical-align: middle;
-    width: 600px;
-    font-size: 28px;
 }
-
-.about-us .right img {
-    margin: auto;
-    margin-left: 70px;
-    border-radius: 5px;
-    width: 700px;
-    margin-block: 5%;
-}
-
 
 .troubles {
     display: flex;
@@ -111,30 +133,20 @@ h1 {
 }
 
 .troubles .container {
+    width: 60%;
     line-height: 1.85;
-    width: 1000px;
-    height: 400px;
-    padding: 10px 50px 50px 50px;
-    font-size: 28px;
+    padding: 20px 50px 80px 50px;
     background: #B1A18E;
     margin: auto;
-    margin-block: 50px;
-}
-
-.work {
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-block: 150px;
 }
 
 .work .left {
-    display: flex;
-    justify-content: center;
-    vertical-align: center;
-    align-items: center;
-    align-content: center;
     float: left;
     width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .work .right {
@@ -142,54 +154,141 @@ h1 {
     width: 50%;
 }
 
-.work .left img {
-    margin-block: 5%;
-    margin: auto;
-    margin-right: 70px;
-    justify-content: center;
-    vertical-align: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 5px;
-    width: 700px;
-}
-
 .work .content {
     line-height: 1.85;
-    font-size: 28px;
-    width: 600px;
+    /* width: 600px; */
     margin: auto;
     margin-left: 70px;
 }
 
-.support {
+.work li{
+    padding-bottom: 10px;
+}
+
+#support {
     display: grid;
     justify-content: center;
     background-color: #707365;
-    font-size: 28px;
     padding-bottom: 50px;
 }
 
-.support .content {
+#support .content {
+    margin: auto;
     line-height: 1.5;
-    width: 1000px;
+    text-align: center;
+    width: 70%;
 }
 
-.support .content p {
+#support .content p {
     padding-bottom: 20px;
 }
 
-.support .btn {
+#support .btn {
     margin-inline: 20px;
     padding: auto;
     height: 60px;
     width: 250px;
 }
 
-.support .btns {
+#support .btn a {
+    font-size: 24px;
+}
+
+#support .btns {
     padding-top: 20px;
     display: flex;
     text-align: center;
     width: auto;
     margin: auto;
+}
+
+@media screen and (max-width: 1500px){
+    main {
+        font-size: 22px;
+    }
+
+    main h2 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    #about-us .content{
+        margin-top: 0px;
+        margin-right: 0;
+    }
+
+    .troubles .container{
+        padding-bottom: 40px;
+    }
+
+    .block img {
+        width: 80%;
+    }
+
+    .work .content{
+        margin-left: 0;
+    }
+
+    .work li{
+        padding-bottom: 10px;
+    }
+
+    #support .content {
+        padding-top: 20px;
+    }
+
+    #support .btn a {
+        font-size: 20;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    html, body {
+        overflow-x: auto;
+    }
+
+    main {
+        font-size: 18px;
+    }
+
+    main h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    #about-us .content{
+        margin-top: 0px;
+        margin-right: 0;
+    }
+
+    .troubles .container{
+        padding-bottom: 30px;
+    }
+
+    .block img {
+        width: 80%;
+    }
+
+    .work .content{
+        margin-left: 0;
+    }
+
+    #support .content {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    #support .btn {
+        margin-inline: 10px;
+        width: 200px;
+        height: 50px;
+    }
+
+    #support .btn a{
+        font-size: 20px;
+    }
 }

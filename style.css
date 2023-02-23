@@ -1,12 +1,13 @@
 html {
     scroll-behavior: 1;
+    overflow-x: auto;
   }
 
 body {
     background: #B1A18E;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: auto;
+    overflow-x: auto;
 }
 
 h2 {
